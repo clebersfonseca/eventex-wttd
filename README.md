@@ -1,6 +1,9 @@
 # Eventex
 
-Sistema de Eventos encomendado pela morena
+Sistema de Eventos encomendado pela morena.
+
+[![Build Status](https://travis-ci.org/clebersfonseca/eventex-wttd.svg?branch=master)](https://travis-ci.org/clebersfonseca/eventex-wttd)
+
 
 ## Como desenvolver?
 1. Clone o repositorio
