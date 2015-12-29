@@ -3,7 +3,7 @@
 Sistema de Eventos encomendado pela morena.
 
 [![Build Status](https://travis-ci.org/clebersfonseca/eventex-wttd.svg?branch=master)](https://travis-ci.org/clebersfonseca/eventex-wttd)
-
+[ ![Codeship Status for clebersfonseca/eventex-wttd](https://codeship.com/projects/985e2d40-8fdd-0133-12fb-4abb3dad2143/status?branch=master)](https://codeship.com/projects/124291)
 
 ## Como desenvolver?
 1. Clone o repositorio
