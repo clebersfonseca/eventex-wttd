@@ -1,3 +1,9 @@
+languages:
+  Ruby: false
+  Javascript: false
+  PHP: false
+  Python: true
+
 engines:
   pep8:
     enabled: true
