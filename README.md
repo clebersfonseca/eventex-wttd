@@ -5,6 +5,8 @@ Sistema de Eventos encomendado pela morena.
 [![Build Status](https://travis-ci.org/clebersfonseca/eventex-wttd.svg?branch=master)](https://travis-ci.org/clebersfonseca/eventex-wttd)
 [ ![Codeship Status for clebersfonseca/eventex-wttd](https://codeship.com/projects/985e2d40-8fdd-0133-12fb-4abb3dad2143/status?branch=master)](https://codeship.com/projects/124291)
 [![Code Climate](https://codeclimate.com/github/clebersfonseca/eventex-wttd/badges/gpa.svg)](https://codeclimate.com/github/clebersfonseca/eventex-wttd)
+[![Test Coverage](https://codeclimate.com/github/clebersfonseca/eventex-wttd/badges/coverage.svg)](https://codeclimate.com/github/clebersfonseca/eventex-wttd/coverage)
+
 
 ## Como desenvolver?
 1. Clone o repositorio
