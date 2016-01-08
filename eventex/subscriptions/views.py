@@ -1,5 +1,4 @@
 from django.conf import settings
-from django.contrib import messages
 from django.core import mail
 from django.http import HttpResponseRedirect, Http404
 from django.shortcuts import render, resolve_url as r
@@ -33,12 +32,12 @@ def create(request):
                'subscriptions/subscription_email.txt',
                {'subscription': subscription})
 
-    return HttpResponseRedirect(r('subscriptions:detail', subscription.pk))
+    return HttpResponseRedirect(r('subscriptions:detail', subscription.hash))
 
 
 def detail(request, pk):
     try:
-        subscription = Subscription.objects.get(pk=pk)
+        subscription = Subscription.objects.get(hash=pk)
     except Subscription.DoesNotExist:
         raise Http404
 

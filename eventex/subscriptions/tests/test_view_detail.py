@@ -11,7 +11,7 @@ class SubscriptionDetailGte(TestCase):
             email = 'cleber@3wsolution.com.br',
             phone = '53-99487480'
         )
-        self.resp = self.client.get(r('subscriptions:detail', self.obj.pk))
+        self.resp = self.client.get(r('subscriptions:detail', self.obj.hash))
 
     def test_get(self):
         self.assertEqual(200, self.resp.status_code)
@@ -35,5 +35,5 @@ class SubscriptionDetailGte(TestCase):
 
 class SubscriptionDetailNotFund(TestCase):
     def test_not_found(self):
-        resp = self.client.get(r('subscriptions:detail', 0))
+        resp = self.client.get(r('subscriptions:detail', '00000000000000000000000000000000'))
         self.assertEqual(404, resp.status_code)
