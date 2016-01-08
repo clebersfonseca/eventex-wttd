@@ -15,15 +15,15 @@ Sistema de Eventos encomendado pela morena.
 5. Configure a instancia com o .env
 6. Execute os testes
 
-```console
-git clone https://github.com/clebersfonseca/eventex-wttd.git wttd
-cd wttd
-python -m venv .
-source bin/activate
-pip install -r requirements-dev.txt
-cp contrib/env-sample .env
-python manage.py test
-```
+<code>
+git clone https://github.com/clebersfonseca/eventex-wttd.git wttd  
+cd wttd  
+python -m venv .  
+source bin/activate  
+pip install -r requirements-dev.txt  
+cp contrib/env-sample .env  
+python manage.py test  
+</code>
 
 
 ## Como fazer o deploy
