@@ -26,9 +26,7 @@ class SubscriptionDetailGte(TestCase):
     def test_html(self):
         contents = (
             self.obj.name,
-            self.obj.email,
-            self.obj.cpf,
-            self.obj.phone
+            self.obj.phone,
         )
 
         with self.subTest():
