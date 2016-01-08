@@ -4,19 +4,17 @@
 <!-- OVERVIEW -->
 <section>
     <div class="content row padding-bottom-3 desktop-12 container">
-        <h1>Obrigada por se inscrever no Eventex.</h1>
-        <div class="desktop-6">
-            <p>Estes foram os dados que você nos forneceu em sua inscrição:</p>
-            
-            <ul>
-                <li>Nome: {{ subscription.name }}</li>
-                <li>CPF: {{ subscription.cpf }}</li>
-                <li>Email: {{ subscription.email }}</li>
-                <li>Telefone: {{ subscription.phone }}</li>
-            </ul>
-            
-            <p>Em até 48 horas úteis, a nossa equipe entrará em contato com você para concluirmos a sua matrícula.</p>
-        </div>
+        <h1>Parabéns {{ subscription.name }}!</h1>
+
+        <p>Sua inscrição foi realizada em {{ subscription.created_at|date:"d/m/Y" }}.</p>
+        <p>
+            Em breve, alguém entrará em contato pelo
+            {% if subscription.phone %}
+                telefone {{ subscription.phone }}
+            {% else %}
+                e-mail {{ subscription.email }}
+            {% endif %}
+        </p>
     </div>
 </section>
 {% endblock content %}
