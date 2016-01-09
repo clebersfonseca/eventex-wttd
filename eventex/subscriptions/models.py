@@ -14,6 +14,7 @@ class Subscription(models.Model):
     phone = models.CharField('telefone', max_length=20)
     created_at = models.DateTimeField('criado em', auto_now_add=True)
     hash = models.CharField(max_length=32, unique=True)
+    paid = models.BooleanField('Pago', default=False)
 
     class Meta:
         verbose_name = 'inscrição'
