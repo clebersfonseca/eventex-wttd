@@ -1,2 +1,8 @@
+uses:
+  - django
+requirements:
+  - requirements.txt
+pep8:
+  full: true
 python-targets:
   - 3
