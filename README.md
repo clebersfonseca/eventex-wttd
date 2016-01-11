@@ -3,6 +3,7 @@
 Sistema de Eventos encomendado pela morena.
 
 [![Build Status](https://travis-ci.org/clebersfonseca/eventex-wttd.svg?branch=master)](https://travis-ci.org/clebersfonseca/eventex-wttd)
+[![Code Health](https://landscape.io/github/clebersfonseca/eventex-wttd/master/landscape.svg?style=flat)](https://landscape.io/github/clebersfonseca/eventex-wttd/master)
 [ ![Codeship Status for clebersfonseca/eventex-wttd](https://codeship.com/projects/985e2d40-8fdd-0133-12fb-4abb3dad2143/status?branch=master)](https://codeship.com/projects/124291)
 [![Code Climate](https://codeclimate.com/github/clebersfonseca/eventex-wttd/badges/gpa.svg)](https://codeclimate.com/github/clebersfonseca/eventex-wttd)
 [![Coverage Status](https://coveralls.io/repos/clebersfonseca/eventex-wttd/badge.svg?branch=master&service=github)](https://coveralls.io/github/clebersfonseca/eventex-wttd?branch=master)
