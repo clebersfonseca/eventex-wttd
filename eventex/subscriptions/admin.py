@@ -22,7 +22,7 @@ class SubscriptionModelAdmin(admin.ModelAdmin):
         if count == 1:
 
             msg = '{} inscrição foi marcada como paga.'
-        else :
+        else:
             msg = '{} inscrições foram marcadas como paga.'
 
         self.message_user(request, msg.format(count))
