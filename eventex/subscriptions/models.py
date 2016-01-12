@@ -3,7 +3,7 @@ import hashlib
 from django.db import models
 
 
-def _createHash(cpf):
+def _createhash(cpf):
     return hashlib.md5(cpf.encode('utf-8')).hexdigest()
 
 
@@ -24,7 +24,6 @@ class Subscription(models.Model):
     def __str__(self):
         return self.name
 
-
     def save(self, *args, **kwargs):
-        self.hash = _createHash(self.cpf)
+        self.hash = _createhash(self.cpf)
         super(Subscription, self).save(*args, **kwargs)
