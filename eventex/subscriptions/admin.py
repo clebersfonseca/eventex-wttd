@@ -20,7 +20,6 @@ class SubscriptionModelAdmin(admin.ModelAdmin):
     def mark_as_paid(self, request, queryset):
         count = queryset.update(paid=True)
         if count == 1:
-
             msg = '{} inscrição foi marcada como paga.'
         else:
             msg = '{} inscrições foram marcadas como paga.'
