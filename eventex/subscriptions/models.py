@@ -1,6 +1,7 @@
 
 import hashlib
 from django.db import models
+from django.shortcuts import resolve_url as r
 from eventex.subscriptions.validators import validate_cpf
 
 
@@ -28,3 +29,6 @@ class Subscription(models.Model):
     def save(self, *args, **kwargs):
         self.hash = _createhash(self.cpf)
         super(Subscription, self).save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return r('subscriptions:detail', self.pk)
