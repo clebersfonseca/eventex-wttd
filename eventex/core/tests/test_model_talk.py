@@ -2,6 +2,7 @@ from django.test import TestCase
 from eventex.core.managers import PeriodManager
 from eventex.core.models import Talk, Course
 
+
 class TalkModelTest(TestCase):
     def setUp(self):
         self.talk = Talk.objects.create(
@@ -40,6 +41,10 @@ class TalkModelTest(TestCase):
     def test_str(self):
         self.assertEqual('Titulo da Palestra', str(self.talk))
 
+    def test_ordering(self):
+        self.assertListEqual(['start'], Talk._meta.ordering)
+
+
 class PeriodManagerTest(TestCase):
     def setUp(self):
         Talk.objects.create(
@@ -64,6 +69,7 @@ class PeriodManagerTest(TestCase):
         qs = Talk.objects.at_afternoom()
         expected = ['Afternoom Talk']
         self.assertQuerysetEqual(qs, expected, lambda o: o.title)
+
 
 class CourseModelTest(TestCase):
     def setUp(self):
@@ -91,3 +97,7 @@ class CourseModelTest(TestCase):
 
     def test_manager(self):
         self.assertIsInstance(Course.objects, PeriodManager)
+
+    def test_ordering(self):
+        self.assertListEqual(['start'], Course._meta.ordering)
+
